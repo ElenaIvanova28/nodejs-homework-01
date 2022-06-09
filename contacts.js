@@ -1,5 +1,3 @@
-const { v4 } = require("uuid");
-
 const fs = require("fs/promises");
 const path = require("path");
 
@@ -36,7 +34,7 @@ async function removeContact(contactId) {
 
 async function addContact(name, email, phone) {
   const contacts = await listContacts();
-  const newContact = { name, email, phone, id: v4() };
+  const newContact = { name, email, phone };
   contacts.push(newContact);
   return contacts;
 }
