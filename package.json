@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "commander": "^9.3.0",
-    "gh-pages": "^4.0.0",
+    
     "uuid-parse": "^1.1.0"
   }
 }
